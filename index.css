@@ -1,0 +1,152 @@
+body {
+  margin: 30px;
+  padding: 10px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* fondo suave pastel */
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive; /* tipografía divertida */
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #ffb3ba; /* rosa pastel */
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ffe6e6;
+  margin-bottom: 30px;
+}
+
+div { 
+    display: grid; 
+}
+
+img {
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "character ppl";
+  gap: 40px; /* más espacio entre cajas */
+  justify-content: center;
+  align-items: start;
+}
+
+.character {
+  padding: 20px;
+  margin: 20px;
+  width: 90%;
+  border: 2px solid #ffb3ba; /* borde rosa pastel */
+  border-radius: 16px;
+  font-size: 15px;
+  background: rgba(255, 182, 186, 0.1); /* leve transparencia pastel */
+  box-shadow: 0 8px 20px rgba(255, 179, 186, 0.3);
+  grid-area: character;
+  text-align: center;
+}
+
+.character img {
+  width: 80%;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+#ppl {
+  padding: 20px;
+  margin: 20px;
+  width: 90%;
+  border: 2px solid #bdb2ff; /* violeta pastel */
+  border-radius: 16px;
+  background: rgba(189, 178, 255, 0.1); /* fondo suave */
+  box-shadow: 0 8px 20px rgba(189, 178, 255, 0.3);
+  grid-area: ppl;
+  list-style: none; /* saca los puntitos */
+}
+
+#ppl li {
+  background: rgba(255, 182, 186, 0.1); /* leve transparencia pastel */
+  border: double 2px mintcream;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: mintcream;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 12px;
+}
+
+#ppl li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+#ppl li span {
+  font-weight: bold;
+  color: #ff6f91; /* rosa pastel */
+  font-size: 1rem;
+}
+
+#ppl li button {
+  margin-left: 8px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.edit-btn {
+  background-color: #ffd6a5; /* amarillo pastel */
+}
+
+.edit-btn:hover {
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #ff6f91; /* rosa pastel */
+  color: white;
+}
+
+.delete-btn:hover {
+  transform: scale(1.05);
+}
+
+.save-btn {
+  background-color: #a0c4ff; /* azul pastel */
+  color: white;
+}
+
+.save-btn:hover {
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background-color: #bdb2ff; /* morado pastel */
+  color: white;
+}
+
+.cancel-btn:hover {
+  transform: scale(1.05);
+}
+
+#ppl li input {
+  margin-right: 6px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
