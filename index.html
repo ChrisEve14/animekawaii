@@ -5,45 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Anime</title>
+    <title>Anime Project</title>
 </head>
 <body>
     <h1 id="title"></h1>
 
     <div>
-    <img src="sono bisque doll.jpg" alt="Sono bisque doll Banner">
+        <img src="sono bisque doll.jpg" alt="Sono bisque doll Banner">
     </div>
 
     <div class="container">
-        
+        <!-- Formulario -->
         <div class="character" id="character">
-            <label for="name">Write your name</label>
-            <input id="entradaUno" type="text" name="name" placeholder="Chizuru">
+            <label for="entradaUno">Write your name</label>
+            <input id="entradaUno" type="text" name="name" placeholder="Chizuru" required>
             <br> 
-    
-            <label for="power">Pick your favorite romance anime</label>
-            <select name="power" id="entradaDos">
-                <option value="blank"></option>
-                <option value="mind reading">Rent a girlfriend</option>
-                <option value="teleportation">My dress-up darling</option>
-                <option value="super hearing">Komi can't communicate</option>
-                <option value="invisibility">A sign of affection</option>
-                <option value="shape shifting">Horimiya</option>
+
+            <label for="entradaDos">Pick your favorite romance anime</label>
+            <select name="power" id="entradaDos" required>
+                <option value="" disabled selected>-- Select one --</option>
+                <option value="Rent a Girlfriend">Rent a Girlfriend</option>
+                <option value="My Dress-Up Darling">My Dress-Up Darling</option>
+                <option value="Komi Can't Communicate">Komi Can't Communicate</option>
+                <option value="A Sign of Affection">A Sign of Affection</option>
+                <option value="Horimiya">Horimiya</option>
             </select>
             <br> 
 
-            <label for="color">Add to the list</label>
-            <input id="entradaTres" type="text" name="color" placeholder="
-100 girlfriends who really really really really really love you">
+            <label for="entradaTres">Add to the list</label>
+            <input id="entradaTres" type="text" name="color" placeholder="100 Girlfriends..." required>
             <br> 
+
             <button id="botonUno">Enter</button>
         </div>
 
-
-        <div class="ppl" id="ppl">
-            <h3>Characters</h3>
-        </div>
-
+        <!-- Lista -->
+        <ul class="ppl" id="ppl">
+            <h3>List</h3>
+        </ul>
     </div>
 
     <script src="characters.js"></script>

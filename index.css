@@ -1,14 +1,14 @@
 body {
   margin: 30px;
   padding: 10px;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* fondo suave pastel */
-  font-family: 'Comic Neue', 'Comic Sans MS', cursive; /* tipografía divertida */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive;
   color: #333;
   line-height: 1.6;
 }
 
 h1 {
-  color: #ffb3ba; /* rosa pastel */
+  color: #ffb3ba;
   text-align: center;
   font-size: 3rem;
   letter-spacing: 2px;
@@ -16,24 +16,32 @@ h1 {
   margin-bottom: 30px;
 }
 
+h3 {
+  padding: 5px;
+  margin: 5px;
+  width: 90%;
+  font-size: 15px;
+  text-align: center;
+}
+
 div { 
     display: grid; 
 }
 
 img {
-    align-self: center;
-    justify-self: center;
-    width: 500px;
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "character ppl";
-  gap: 40px; /* más espacio entre cajas */
+  gap: 40px;
   justify-content: center;
   align-items: start;
 }
@@ -42,10 +50,10 @@ img {
   padding: 20px;
   margin: 20px;
   width: 90%;
-  border: 2px solid #ffb3ba; /* borde rosa pastel */
+  border: 2px solid #ffb3ba;
   border-radius: 16px;
   font-size: 15px;
-  background: rgba(255, 182, 186, 0.1); /* leve transparencia pastel */
+  background: rgba(255, 182, 186, 0.1);
   box-shadow: 0 8px 20px rgba(255, 179, 186, 0.3);
   grid-area: character;
   text-align: center;
@@ -61,12 +69,12 @@ img {
   padding: 20px;
   margin: 20px;
   width: 90%;
-  border: 2px solid #bdb2ff; /* violeta pastel */
+  border: 2px solid #bdb2ff;
   border-radius: 16px;
-  background: rgba(189, 178, 255, 0.1); /* fondo suave */
+  background: rgba(189, 178, 255, 0.1);
   box-shadow: 0 8px 20px rgba(189, 178, 255, 0.3);
   grid-area: ppl;
-  list-style: none; /* saca los puntitos */
+  list-style: none;
 }
 
 #ppl li {
@@ -92,12 +100,6 @@ img {
   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
 }
 
-#ppl li span {
-  font-weight: bold;
-  color: #ff6f91; /* rosa pastel */
-  font-size: 1rem;
-}
-
 #ppl li button {
   margin-left: 8px;
   border-radius: 10px;
@@ -108,38 +110,12 @@ img {
   transition: transform 0.1s;
 }
 
-.edit-btn {
-  background-color: #ffd6a5; /* amarillo pastel */
-}
+.edit-btn { background-color: #ffd6a5; }
+.delete-btn { background-color: #ff6f91; color: white; }
+.save-btn { background-color: #a0c4ff; color: white; }
+.cancel-btn { background-color: #bdb2ff; color: white; }
 
-.edit-btn:hover {
-  transform: scale(1.05);
-}
-
-.delete-btn {
-  background-color: #ff6f91; /* rosa pastel */
-  color: white;
-}
-
-.delete-btn:hover {
-  transform: scale(1.05);
-}
-
-.save-btn {
-  background-color: #a0c4ff; /* azul pastel */
-  color: white;
-}
-
-.save-btn:hover {
-  transform: scale(1.05);
-}
-
-.cancel-btn {
-  background-color: #bdb2ff; /* morado pastel */
-  color: white;
-}
-
-.cancel-btn:hover {
+#ppl li button:hover {
   transform: scale(1.05);
 }
 
